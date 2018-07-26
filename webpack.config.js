@@ -164,7 +164,9 @@ function config(mode) {
           loader: path.resolve('soy-loader.js'),
           query: {
             inputDir: path.resolve(__dirname, 'templates'),
-            outputDir: path.resolve(__dirname, '.tmp/js/templates')
+            outputDir: path.resolve(__dirname, '.tmp/js/templates'),
+            directiveFile: path.resolve(__dirname, 'js/components/Soy2js/directives.js'),
+            funcsFile: path.resolve(__dirname, 'js/components/Soy2js/funcs.js')
           }
         },
         {
